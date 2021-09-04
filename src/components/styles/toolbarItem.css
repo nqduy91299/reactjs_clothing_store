@@ -1,0 +1,13 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.total-item {
+  align-self: center;
+}
+
+.select-sort {
+  width: 250px;
+}

@@ -1,0 +1,38 @@
+.order-purchase-container {
+  padding: 30px 20px;
+  border: 1px solid #cecece;
+  box-shadow: 0px 2px 8px 0px #cecece;
+}
+.order-purchase-container .ant-table-container th {
+  text-transform: uppercase;
+}
+
+.order-purchase-container .ant-table-container th,
+.order-purchase-container .ant-table-container td {
+  background: none;
+}
+
+.order-purchase-container .ant-table-container th:last-child,
+.order-purchase-container .ant-table-container td:last-child {
+  text-align: end;
+  width: 35%;
+}
+
+.order-purchase-container .ant-table-container span {
+  font-size: 14px;
+}
+
+.order-purchase-container > .table-price {
+  margin-top: 20px;
+}
+
+.order-purchase-container > .table-price tr:last-child td span,
+.order-purchase-container > .table-price tr:last-child td {
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom: none;
+}
+.order-purchase-container > .table-price tr:first-child td span,
+.order-purchase-container > .table-price tr:first-child > td {
+  font-size: 18px;
+}

@@ -1,0 +1,44 @@
+.card-container {
+  overflow: hidden;
+}
+.card-container:hover {
+  transition: 100ms ease-in;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.img-item-card-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+.img-item-card {
+  width: 100%;
+  transition: 100ms ease-out;
+}
+
+.img-item-card:hover {
+  transition: 200ms ease-in;
+  transform: scale(1.1);
+}
+
+.info-card {
+  padding: 0 7px 14px 7px;
+}
+
+.item-name {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.item-price {
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+.pre-price {
+  margin-left: 10px;
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.btn-add {
+  margin-left: 10px;
+}

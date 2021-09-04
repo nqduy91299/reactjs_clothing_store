@@ -1,0 +1,11 @@
+.cart-item {
+  border: 1px solid;
+}
+
+.pre-cart-item {
+  display: flex;
+}
+
+.pre-cart-item img {
+  width: 100px;
+}

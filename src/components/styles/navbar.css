@@ -1,0 +1,48 @@
+header.navbar {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid #e2e2e2;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+.nav-option {
+  padding: 0 15px;
+}
+
+.col-logo {
+  padding: 10px 15px;
+  text-align: center;
+  transition: 300ms ease-out;
+}
+
+.navbar-expand .col-logo {
+  padding: 20px 15px;
+  transition: 300ms ease-in;
+}
+.navbar-expand .col-logo span.brand-logo {
+  font-size: 40px;
+  transition: 300ms ease-in;
+}
+
+span.brand-logo {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #3a3a3a;
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+  transition: 300ms ease-out;
+}
+
+.badge-color > .ant-badge-count {
+  background-color: #ff6e86;
+}
+
+@media (max-width: 769px) {
+  .col-logo {
+    text-align: start;
+  }
+}
