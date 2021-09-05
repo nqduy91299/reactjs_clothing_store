@@ -1,4 +1,4 @@
-import { Col, Drawer, Row, Space } from 'antd';
+import { Button, Drawer, Row } from 'antd';
 import React from 'react';
 import CartItem from './CartItem';
 
@@ -12,13 +12,29 @@ const CartDrawer = ({ visible, onClose }) => {
             closable={false}
             onClose={() => onClose()}
             visible={visible}
+            width={600}
+            footer={
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Button danger>Clear All</Button>
+                    <Button type='primary' disabled>Save Change</Button>
+                    <Button type='primary'>Purchase</Button>
+                </div>
+            }
         >
-            {/* <Space direction="vertical" size={10}>
+            <Row gutter={[0, 12]}>
                 <CartItem image={testImg} />
                 <CartItem image={testImg} />
-            </Space> */}
-            <Row>
-
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
+                <CartItem image={testImg} />
                 <CartItem image={testImg} />
             </Row>
         </Drawer>

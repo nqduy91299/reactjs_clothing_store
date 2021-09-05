@@ -8,10 +8,10 @@ const SuccessModal = () => {
     // var isModalVisible = true
 
 
-    const handleOk = () => {
-        setIsModalVisible(false);
-        // isModalVisible = false
-    };
+    // const handleOk = () => {
+    //     setIsModalVisible(false);
+    //     // isModalVisible = false
+    // };
 
     const handleCancel = () => {
         setIsModalVisible(false);

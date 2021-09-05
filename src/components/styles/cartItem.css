@@ -1,11 +1,28 @@
 .cart-item {
-  border: 1px solid;
-}
-
-.pre-cart-item {
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
   display: flex;
 }
 
-.pre-cart-item img {
+.cart-item img {
   width: 100px;
+}
+
+.item-sub-part {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.item-sub-part .item-name {
+  font-weight: 500;
+  font-size: 15px;
+}
+.input-cart-item-area {
+  padding-top: 10px;
+}
+
+.input-cart-item {
+  width: 70px;
 }
