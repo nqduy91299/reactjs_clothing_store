@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/navbar.css";
 import $ from "jquery";
 import {
+  FileSearchOutlined,
   HeartOutlined,
   HomeOutlined,
   InfoCircleOutlined,
@@ -35,19 +36,40 @@ const Navbar = () => {
     }, 250);
   };
 
-  const [visible, setVisible] = useState(false);
+  const [visibleCart, setVisibleCart] = useState(false);
   const showDrawer = () => {
-    setVisible(true);
+    setVisibleCart(true);
   };
-  const onClose = () => {
-    setVisible(false);
+  const onCloseCart = () => {
+    setVisibleCart(false);
   };
 
   return (
     <header className={isHomePage ? "navbar navbar-expand" : "navbar"}>
       <Row align="middle">
         <Col xs={0} sm={0} md={8} lg={8} xl={10} className="nav-option">
-          hi
+          <Space size="middle">
+            <Badge className="badge-color" count={5}>
+              <Tooltip placement="bottomRight" title={"Favorite"}>
+                <Button
+                  type="default"
+                  shape="circle"
+                  icon={<HeartOutlined />}
+                  onClick={showDrawer}
+                />
+              </Tooltip>
+            </Badge>
+            <Tooltip placement="bottomRight" title={"Tracking Order"}>
+
+              <Link to="/tracking">
+                <Button
+                  type="default"
+                  shape="circle"
+                  icon={<FileSearchOutlined />}
+                />
+              </Link>
+            </Tooltip>
+          </Space>
         </Col>
         <Col xs={10} sm={10} md={8} lg={8} xl={4} className="col-logo">
           <Link to="/">
@@ -69,15 +91,6 @@ const Navbar = () => {
         >
           <Space size="middle">
             <Badge className="badge-color" count={5}>
-              <Tooltip placement="bottomRight" title={"Favorite"}>
-                <Button
-                  type="default"
-                  shape="circle"
-                  icon={<HeartOutlined />}
-                />
-              </Tooltip>
-            </Badge>
-            <Badge className="badge-color" count={5}>
               <Tooltip placement="bottomRight" title={"Cart"}>
                 <Button
                   type="default"
@@ -87,14 +100,13 @@ const Navbar = () => {
                 />
               </Tooltip>
             </Badge>
-
             <Dropdown overlay={authOption} placement="topLeft" arrow>
               <Button type="default" shape="circle" icon={<UserOutlined />} />
             </Dropdown>
           </Space>
         </Col>
       </Row>
-      <CartDrawer visible={visible} onClose={onClose} />
+      <CartDrawer visible={visibleCart} onClose={onCloseCart} />
     </header>
   );
 };

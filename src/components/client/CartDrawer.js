@@ -9,8 +9,7 @@ const CartDrawer = ({ visible, onClose }) => {
         <Drawer
             title="Cart"
             placement="right"
-            closable={false}
-            onClose={() => onClose()}
+            onClose={onClose}
             visible={visible}
             width={600}
             footer={
