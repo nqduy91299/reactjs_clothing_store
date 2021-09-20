@@ -5,6 +5,7 @@ import PageNotFound from "./components/commons/PageNotFound";
 import Home from "./components/client/Home";
 import Detail from "./components/client/Detail";
 import Purchase from "./components/client/Purchase";
+import TrackingOrder from "./components/client/TrackingOrder";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route exact path="/:idItem/detail" component={Detail} />
         <Route exact path="/purchase" component={Purchase} />
+        <Route exact path="/tracking" component={TrackingOrder} />
 
         <Route exact path="/opp" component={PageNotFound} />
         <Route >
